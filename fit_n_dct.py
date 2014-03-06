@@ -4,7 +4,12 @@ from ROOT import TCanvas, TF1, gStyle, gROOT
 gROOT.SetBatch()
 gStyle.SetOptFit(0111)
 
-
+"""
+This script loads histograms from ROOT files, 
+applies fits and dcts to them,
+produces ROOT-TF1 compatible strings, 
+and produces a website for viewing results.
+"""
 #################################################################### general ###
 def canvas_n_save_it(wrp):
     c = TCanvas(wrp.name, wrp.name, 600, 600)
